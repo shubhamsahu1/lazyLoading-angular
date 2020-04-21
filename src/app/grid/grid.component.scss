@@ -1,14 +1,27 @@
 .container {
-    display: grid;
-    
-    grid-auto-rows: 80px;
-    column-gap: 1%;
-    row-gap: 15px;
-    &--grid{
-        grid-template-columns: 24% 24% 24% 24%;
-    }
-  }
+  display: grid;
 
-  .box{
-      border: 1px solid black;
+  grid-auto-rows: 80px;
+  column-gap: 1%;
+  row-gap: 15px;
+  &--grid {
+    grid-template-columns: 24% 24% 24% 24%;
   }
+  .box {
+    border: 1px solid black;
+  }
+}
+.button-group{
+    margin: 10px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    button{
+        background: honeydew;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        outline:none;
+    }
+}
