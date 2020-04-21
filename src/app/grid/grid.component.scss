@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    
+    grid-auto-rows: 80px;
+    column-gap: 1%;
+    row-gap: 15px;
+    &--grid{
+        grid-template-columns: 24% 24% 24% 24%;
+    }
+  }
+
+  .box{
+      border: 1px solid black;
+  }

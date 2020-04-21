@@ -1,0 +1,8 @@
+<h2>Grid
+</h2>
+<button (click)="toggele()">Grid/row</button><br/><br/>
+<div class="container" [ngClass]="{'container--grid': grid}">
+  <div *ngFor="let number of gridCount" class="box">
+
+  </div>
+</div>

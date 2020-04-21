@@ -1,0 +1,18 @@
+<div class="control_wraper">
+  <div class="control_wraper_form">
+    <div class="control_wraper_form--input">
+      <label for="limit">Enter time limit:</label>
+      <input type="number"  [value]="limit"  (change)="limit = $event.target.value; setTime(limit)" name="limit" />
+    </div>
+    <div class="control_wraper_form--buttons">
+      <button (click)="start()">Start/Pause</button>
+      <button (click)="reset()">Reset</button>
+    </div>
+  </div>
+  <div class="control_wraper_log">
+    <p *ngFor="let message of messages" >
+      {{message}}
+    </p>
+  </div>
+  
+</div>
