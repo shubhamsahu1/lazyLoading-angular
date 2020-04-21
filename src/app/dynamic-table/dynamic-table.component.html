@@ -1,1 +1,23 @@
-<p>dynamic-table works!</p>
+
+<h2>This is dynamic table</h2>
+<p>we can short it by clicking on heading:</p>
+
+<table>
+  <tr>
+    <th (click)="shortBy('Name')">Name</th>
+    <th (click)="shortBy('Class')">Class</th>
+    <th (click)="shortBy('Section')">Section</th>
+    <th (click)="shortBy('Sub1')">Sub1</th>
+    <th (click)="shortBy('Sub2')">Sub2</th>
+    <th (click)="shortBy('Sub3')">Sub3</th>
+  </tr>
+  <tr *ngFor="let data of tableData">
+    <td>{{data.Name}}</td>
+    <td>{{data.Class}}</td>
+    <td>{{data.Section}}</td>
+    <td>{{data.Sub1}}</td>
+    <td>{{data.Sub2}}</td>
+    <td>{{data.Sub3}}</td>
+  </tr>
+ 
+</table>
