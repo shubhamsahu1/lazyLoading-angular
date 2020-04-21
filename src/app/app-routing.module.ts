@@ -16,6 +16,11 @@ const routes: Routes = [
     loadChildren: () => import('./box/box.module').then(m => m.BoxModule)
   },
   {
+    path: 'table',
+    loadChildren: () => import('./dynamic-table/dynamic-table.module').then(m => m.DynamicTableModule)
+  },
+
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full'

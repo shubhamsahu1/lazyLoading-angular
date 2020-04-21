@@ -4,7 +4,7 @@ div{
 }
 
 .rotating {
-    -webkit-animation: rotation 4s infinite linear;
+    -webkit-animation: rotation 8s infinite linear;
     border: none;
     font-size: 25px;
 }
