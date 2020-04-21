@@ -1,0 +1,10 @@
+.lazy {
+  display: flex;
+  justify-content: center;
+}
+.navigation > a {
+ 
+    margin: 5px;
+    page-break-after: 5px;
+ 
+}

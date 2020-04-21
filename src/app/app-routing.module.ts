@@ -12,10 +12,15 @@ const routes: Routes = [
     loadChildren: () => import('./grid/grid.module').then(m => m.GridModule)
   },
   {
+    path: 'box',
+    loadChildren: () => import('./box/box.module').then(m => m.BoxModule)
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full'
   },
+
 
 ];
 
